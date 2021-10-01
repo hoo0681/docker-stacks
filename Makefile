@@ -14,7 +14,7 @@ OWNER?=jupyter
 MULTI_IMAGES:= \
 	base-notebook \
 	minimal-notebook \
-	r-notebook \
+	#r-notebook \
 	scipy-notebook \
 	pyspark-notebook \
 	all-spark-notebook
@@ -26,7 +26,7 @@ AMD64_ONLY_IMAGES:= \
 ALL_IMAGES:= \
 	base-notebook \
 	minimal-notebook \
-	r-notebook \
+	#r-notebook \
 	scipy-notebook \
 	tensorflow-notebook \
 	datascience-notebook \

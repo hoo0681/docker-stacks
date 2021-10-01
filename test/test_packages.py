@@ -52,7 +52,7 @@ PACKAGE_MAPPING = {
     "scikit-image": "skimage",
     "spylon-kernel": "spylon_kernel",
     "pytables": "tables",
-    "jupyter-git":"jupyter_git",
+    "jupyter-git": "jupyter_git",
     # R
     "randomforest": "randomForest",
     "rsqlite": "DBI",
@@ -89,6 +89,7 @@ def packages(package_helper):
 
 def package_map(package):
     """Perform a mapping between the python package name and the name used for the import"""
+    LOGGER.debug(PACKAGE_MAPPING.get(package, package))
     return PACKAGE_MAPPING.get(package, package)
 
 
