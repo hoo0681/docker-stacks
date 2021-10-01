@@ -52,6 +52,7 @@ PACKAGE_MAPPING = {
     "scikit-image": "skimage",
     "spylon-kernel": "spylon_kernel",
     "pytables": "tables",
+    "jupyter-git":"jupyter_git",
     # R
     "randomforest": "randomForest",
     "rsqlite": "DBI",
@@ -71,7 +72,6 @@ EXCLUDED_PACKAGES = [
     "bzip2",
     "openssl",
     "ca-certificates",
-    "jupyter-git",
 ]
 
 
