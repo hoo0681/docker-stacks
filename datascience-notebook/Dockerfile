@@ -33,7 +33,7 @@ ENV JULIA_DEPOT_PATH=/opt/julia \
 
 WORKDIR /tmp
 
-# hadolint ignore=SC2046
+# hadolint ignore=SC2046 
 RUN set -x && \
     julia_arch=$(uname -m) && \
     julia_short_arch="${julia_arch}" && \
