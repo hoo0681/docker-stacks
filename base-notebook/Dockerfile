@@ -3,7 +3,7 @@
 
 # Ubuntu 20.04 (focal)
 # https://hub.docker.com/_/ubuntu/?tab=tags&name=focal
-ARG ROOT_CONTAINER=nvidia/cuda:11.4.2-base-ubuntu20.04
+ARG ROOT_CONTAINER=nvidia/cuda:11.2.2-cudnn8-runtime-ubuntu20.04
 
 FROM $ROOT_CONTAINER
 

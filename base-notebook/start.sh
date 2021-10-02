@@ -117,7 +117,7 @@ else
                 sed -e "s/^jovyan:/nayvoj:/" /etc/passwd > /tmp/passwd
                 echo "jovyan:x:$(id -u):$(id -g):,,,:/home/jovyan:/bin/bash" >> /tmp/passwd
                 cat /tmp/passwd > /etc/passwd
-                rm /tmp/passwd
+                #rm /tmp/passwd
             else
                 echo 'Container must be run with group "root" to update passwd file'
             fi
