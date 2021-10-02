@@ -70,7 +70,7 @@ def create_manifest_file(
         ManifestHeader.create_header(short_image_name, owner, BUILD_TIMESTAMP)
     ] + [manifest.markdown_piece(container) for manifest in manifests]
     markdown_content = "\n\n".join(markdown_pieces) + "\n"
-
+    os.makedirs(os.path.join(wiki_path,f"manifests/"), exist_ok=True)
     with open(manifest_file, "w") as f:
         f.write(markdown_content)
 
