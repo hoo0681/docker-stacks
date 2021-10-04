@@ -52,7 +52,7 @@ PACKAGE_MAPPING = {
     "scikit-image": "skimage",
     "spylon-kernel": "spylon_kernel",
     "pytables": "tables",
-    "jupyterlab-git": "jupyter_git",
+    "jupyterlab-git": "jupyterlab_git",
     # R
     "randomforest": "randomForest",
     "rsqlite": "DBI",
