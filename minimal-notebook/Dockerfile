@@ -1,6 +1,6 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-ARG OWNER=jupyter
+ARG OWNER=hoo0681
 ARG BASE_CONTAINER=$OWNER/base-notebook
 FROM $BASE_CONTAINER
 
@@ -11,6 +11,7 @@ USER root
 # Install all OS dependencies for fully functional notebook server
 RUN apt-get update --yes && \
     apt-get install --yes --no-install-recommends \
+    build-essential \
     # Common useful utilities
     git \
     nano-tiny \
@@ -36,6 +37,9 @@ RUN apt-get update --yes && \
 # Create alternative for nano -> nano-tiny
 RUN update-alternatives --install /usr/bin/nano nano /bin/nano-tiny 10
 
+RUN apt install nvtop && \
+    rm -rf /var/lib/apt/lists/*
+    
 # Switch back to jovyan to avoid accidental container runs as root
 USER ${NB_UID}
 RUN mamba install --quiet --yes \
