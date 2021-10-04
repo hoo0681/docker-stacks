@@ -36,9 +36,6 @@ RUN apt-get update --yes && \
 
 # Create alternative for nano -> nano-tiny
 RUN update-alternatives --install /usr/bin/nano nano /bin/nano-tiny 10
-
-RUN apt install nvtop && \
-    rm -rf /var/lib/apt/lists/*
     
 # Switch back to jovyan to avoid accidental container runs as root
 USER ${NB_UID}
