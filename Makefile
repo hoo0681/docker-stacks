@@ -14,8 +14,8 @@ OWNER?=hoo0681
 MULTI_IMAGES:= \
 	base-notebook \
 	minimal-notebook \
-	r-notebook \
 	scipy-notebook \
+	r-notebook \
 	pyspark-notebook \
 	all-spark-notebook
 # Images that can only be built on the amd64 architecture (aka. x86_64)
@@ -26,8 +26,8 @@ AMD64_ONLY_IMAGES:= \
 ALL_IMAGES:= \
 	base-notebook \
 	minimal-notebook \
-	r-notebook \
 	scipy-notebook \
+	r-notebook \
 	tensorflow-notebook \
 	datascience-notebook \
 	pyspark-notebook \
