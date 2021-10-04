@@ -11,7 +11,8 @@ OWNER?=hoo0681
 # Images supporting the following architectures:
 # - linux/amd64
 # - linux/arm64
-MULTI_IMAGES:= minimal-notebook\
+MULTI_IMAGES:= scipy-notebook\
+	r-notebook\
 #	base-notebook \
 	minimal-notebook \
 	scipy-notebook \
@@ -23,7 +24,8 @@ AMD64_ONLY_IMAGES:= \
 #	datascience-notebook \
 	tensorflow-notebook
 # All of the images
-ALL_IMAGES:= minimal-notebook\
+ALL_IMAGES:= scipy-notebook\
+	r-notebook\
 #	base-notebook \
 	minimal-notebook \
 	scipy-notebook \
