@@ -11,9 +11,8 @@ OWNER?=hoo0681
 # Images supporting the following architectures:
 # - linux/amd64
 # - linux/arm64
-MULTI_IMAGES:= scipy-notebook\
-	r-notebook\
-#	base-notebook \
+MULTI_IMAGES:= \
+	base-notebook \
 	minimal-notebook \
 	scipy-notebook \
 	r-notebook \
@@ -21,12 +20,11 @@ MULTI_IMAGES:= scipy-notebook\
 	all-spark-notebook
 # Images that can only be built on the amd64 architecture (aka. x86_64)
 AMD64_ONLY_IMAGES:= \
-#	datascience-notebook \
+	datascience-notebook \
 	tensorflow-notebook
 # All of the images
-ALL_IMAGES:= scipy-notebook\
-	r-notebook\
-#	base-notebook \
+ALL_IMAGES:= \
+	base-notebook \
 	minimal-notebook \
 	scipy-notebook \
 	r-notebook \
