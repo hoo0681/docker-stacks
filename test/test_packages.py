@@ -54,6 +54,7 @@ PACKAGE_MAPPING = {
     "pytables": "tables",
     "jupyterlab-git": "jupyterlab_git",
     "pyyaml":"yaml",
+    "mkl-include" : "mkl",
     # R
     "randomforest": "randomForest",
     "rsqlite": "DBI",
