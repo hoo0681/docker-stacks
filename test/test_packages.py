@@ -54,7 +54,6 @@ PACKAGE_MAPPING = {
     "pytables": "tables",
     "jupyterlab-git": "jupyterlab_git",
     "pyyaml":"yaml",
-    "mkl-include" : "mkl",
     "swagger-spec-validator":"swagger_spec_validator",
     "strict-rfc3339":"strict_rfc3339",
     "websocket-client":"websocket",
@@ -83,6 +82,7 @@ EXCLUDED_PACKAGES = [
     "bzip2",
     "openssl",
     "ca-certificates",
+    "mkl-include",
 ]
 
 
