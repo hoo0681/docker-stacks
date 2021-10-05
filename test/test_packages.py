@@ -53,6 +53,7 @@ PACKAGE_MAPPING = {
     "spylon-kernel": "spylon_kernel",
     "pytables": "tables",
     "jupyterlab-git": "jupyterlab_git",
+    "pyyaml":"yaml",
     # R
     "randomforest": "randomForest",
     "rsqlite": "DBI",
