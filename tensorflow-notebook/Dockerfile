@@ -20,9 +20,10 @@ RUN pip install  --no-cache-dir torch==1.9.1+cu111 torchvision==0.10.1+cu111 tor
 
 USER root
 
-RUN apt install nvtop && \
-    rm -rf /var/lib/apt/lists/*
-    
+RUN apt-get update --yes && \
+    apt-get install --yes --no-install-recommends \
+    nvtop && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN fix-permissions /home/$NB_USER
 
 USER $NB_UID
