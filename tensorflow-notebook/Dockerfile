@@ -8,7 +8,9 @@ LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
 # Install Tensorflow
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir "tensorflow-gpu" && \
+    pip install --no-cache-dir "tensorflow-gpu" \
+    "tensorflow-datasets" \
+    "tensorflow_hub" && \
     pip install --no-cache-dir keras
 
 RUN mamba install --quiet --yes \
@@ -25,5 +27,9 @@ RUN apt-get update --yes && \
     nvtop && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN fix-permissions /home/$NB_USER
-
+RUN mamba install --quiet --yes \
+    neptune-notebooks && \
+    conda clean --all -f -y && \
+    fix-permissions "${CONDA_DIR}" && \
+    fix-permissions "/home/${NB_USER}"  
 USER $NB_UID
