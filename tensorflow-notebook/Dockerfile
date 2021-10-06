@@ -8,7 +8,7 @@ LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
 # Install Tensorflow
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir tensorflow-gpu && \
+    pip install --no-cache-dir tensorflow && \
     pip install --no-cache-dir keras
 
 RUN mamba install --quiet --yes \
