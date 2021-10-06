@@ -63,6 +63,7 @@ PACKAGE_MAPPING = {
     "neptune_client":"neptune",
     "neptune-notebooks":"neptune_notebooks",
     "tensorflow-datasets":"tensorflow_datasets",
+    "tensorflow-gpu":'tensorflow',
     # R
     "randomforest": "randomForest",
     "rsqlite": "DBI",
