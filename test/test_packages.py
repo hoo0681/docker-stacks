@@ -83,6 +83,8 @@ EXCLUDED_PACKAGES = [
     "openssl",
     "ca-certificates",
     "mkl-include",
+    "mkl",
+    "cmake",
 ]
 
 
