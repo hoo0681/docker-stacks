@@ -21,6 +21,8 @@ USER root
 # features (e.g., download as all possible file formats)
 # Install tini: init for containers
 ENV DEBIAN_FRONTEND noninteractive
+ENV NVIDIA_DRIVER_CAPABILITIES compute,video,utility
+
 RUN apt-get update --yes && \
     apt-get install --yes --no-install-recommends \
     tini \
