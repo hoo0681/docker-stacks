@@ -13,7 +13,7 @@ OWNER?=hoo0681
 # - linux/arm64
 MULTI_IMAGES:= \
 	base-notebook \
-#	minimal-notebook \
+	minimal-notebook \
 #	scipy-notebook \
 	#r-notebook \
 	pyspark-notebook \
@@ -25,7 +25,7 @@ AMD64_ONLY_IMAGES:= \
 # All of the images
 ALL_IMAGES:= \
 	base-notebook \
-#	minimal-notebook \
+	minimal-notebook \
 #	scipy-notebook \
 #	tensorflow-notebook \
 	#r-notebook \
